@@ -11,7 +11,7 @@ flex-direction: column;
 
 export const Card = styled.div`
 background: #fff;
-width: 550px;
+width:60vw;
 border-radius: 8px;
 padding: 20px;
 margin-top: 15px;
@@ -22,6 +22,15 @@ h2{
   color: #392d2d;
   margin-bottom: 10px;
 }
+
+/* ajusta o tamanho para dispositivos*/
+@media (max-width: 768px) {
+       width:90vw;
+    }
+
+@media (max-width: 1024px) and (min-width: 768px) {
+       width:70vw;
+    }
 `;
 
 export const Templates = styled.div`
@@ -49,6 +58,7 @@ button {
   img {
     width: 53px;
     height: 53px;
+    object-fit: cover; /* Previne distorção na imagem */
   }
 }
 `;
